@@ -3,6 +3,7 @@ const shouldTestPass = true;
 if(shouldTestPass) {
     console.log("test passed!")
     console.log("test passed 1")
+    console.log("testing s3 static assets deployment")
     process.exit(0) // 0 means, exit proccess without error
 } else {
     console.log("test failed!")
