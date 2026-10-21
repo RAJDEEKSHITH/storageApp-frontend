@@ -1,0 +1,14 @@
+jobs:
+  build-frontend:
+    name: Build React frontend
+    timeoutSeconds: 300
+    maxAttempts: 1
+    commands:
+      - npm ci
+      - npm run build
+      - test -f dist/index.html
+      - echo "Frontend build output:"
+      - find dist -maxdepth 3 -type f -print
+    artifacts:
+      - name: frontend-dist
+        path: dist
