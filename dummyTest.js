@@ -5,7 +5,7 @@ if(shouldTestPass) {
     console.log("test passed 1")
     console.log("testing s3 static assets deployment")
     console.log("webhook trigget test")
-    console.log("webhook trigget test 2....")
+    console.log("webhook trigget test 2.....")
     process.exit(0) // 0 means, exit proccess without error
 } else {
     console.log("test failed!")
